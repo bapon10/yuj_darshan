@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ------------------------------
+   Root Variables
+------------------------------ */
+
+:root {
+  --bg-primary: #F8F4ED;
+  --bg-secondary: #EEE7DA;
+
+  --text-primary: #2B2B2B;
+  --text-light: #5E5E5E;
+
+  --accent-green: #556B4F;
+  --accent-brown: #8B6A4E;
+  --accent-gold: #C7A25C;
+
+  --container-width: 1200px;
+}
+
+/* ------------------------------
+   Base
+------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+
+  font-family: "Inter", sans-serif;
+
+  overflow-x: hidden;
+
+  line-height: 1.7;
+}
+
+/* ------------------------------
+   Typography
+------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+section {
+  width: 100%;
+}
+
+.container {
+  width: min(90%, var(--container-width));
+  margin: auto;
+}
+
+.hero-video {
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 75%,
+    rgba(0,0,0,0.9) 85%,
+    rgba(0,0,0,0.5) 93%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 75%,
+    rgba(0,0,0,0.9) 85%,
+    rgba(0,0,0,0.5) 93%,
+    transparent 100%
+  );
+
+}
