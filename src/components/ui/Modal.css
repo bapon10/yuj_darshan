@@ -1,0 +1,45 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(33, 47, 56, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 200;
+}
+
+.modal-dialog {
+  width: min(620px, 100%);
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: 0 25px 60px rgba(33, 47, 56, 0.08);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: var(--space-md);
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  color: var(--ink);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: grid;
+  gap: var(--space-md);
+}

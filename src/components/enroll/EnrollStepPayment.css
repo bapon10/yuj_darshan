@@ -1,0 +1,27 @@
+.enroll-step {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.enroll-step h3 {
+  margin: 0;
+}
+
+.enroll-step__summary {
+  border: 1px solid var(--hairline);
+  background: var(--paper-3);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.enroll-step__summary p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.enroll-step__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}

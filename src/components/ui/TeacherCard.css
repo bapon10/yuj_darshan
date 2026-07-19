@@ -1,0 +1,62 @@
+.teacher-card {
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.teacher-card__photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px dashed var(--hairline);
+  margin: 0 auto var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  text-align: center;
+  padding: 0 var(--space-xs);
+}
+
+.teacher-card__name {
+  font-size: 1.2rem;
+}
+
+.teacher-card__role {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--accent-deep);
+  margin-top: 0.4rem;
+}
+
+.teacher-card__bio {
+  margin-top: var(--space-sm);
+  font-size: 0.9rem;
+  max-width: 32ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teacher-card--spotlight {
+  grid-column: span 1;
+}
+
+.teacher-card--spotlight .teacher-card__photo {
+  width: 170px;
+  height: 170px;
+}
+
+.teacher-card__quote {
+  margin: var(--space-md) auto 0;
+  max-width: 34ch;
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--ink);
+  border: none;
+  padding: 0;
+}

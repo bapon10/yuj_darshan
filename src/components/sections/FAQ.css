@@ -1,0 +1,12 @@
+.faq-section {
+  padding: var(--space-2xl) 0;
+}
+
+.faq-section h2 {
+  margin-top: 0.5rem;
+}
+
+.faq-section__container {
+  margin-top: var(--space-xl);
+  max-width: 70rem;
+}

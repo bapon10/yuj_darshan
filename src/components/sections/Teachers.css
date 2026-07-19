@@ -1,0 +1,32 @@
+.teachers {
+  padding: var(--space-2xl) 0;
+}
+
+.teachers h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  max-width: 20ch;
+  margin-bottom: var(--space-xl);
+}
+
+.teachers__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.teachers__cta {
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+@media (max-width: 900px) {
+  .teachers__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .teachers__grid {
+    grid-template-columns: 1fr;
+  }
+}

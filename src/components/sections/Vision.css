@@ -1,0 +1,32 @@
+.vision {
+  padding: var(--space-2xl) 0;
+  background: var(--paper-2);
+  text-align: center;
+}
+
+.vision__rule {
+  width: 60px;
+  height: 1px;
+  background: var(--hairline);
+  border: none;
+  margin: var(--space-md) auto var(--space-xl);
+}
+
+.vision__panel {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.vision__quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.vision__followup {
+  margin-top: var(--space-lg);
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+}

@@ -1,0 +1,12 @@
+.enroll-step {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.enroll-step h3 {
+  margin: 0;
+}
+
+.enroll-step p {
+  color: var(--ink-soft);
+}

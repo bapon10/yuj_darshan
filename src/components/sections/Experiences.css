@@ -1,0 +1,20 @@
+.experiences {
+  padding: var(--space-2xl) 0;
+}
+
+.experiences h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: var(--space-xl);
+}
+
+.experiences__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+@media (max-width: 900px) {
+  .experiences__grid {
+    grid-template-columns: 1fr;
+  }
+}

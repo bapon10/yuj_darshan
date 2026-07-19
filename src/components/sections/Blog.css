@@ -1,0 +1,31 @@
+.blog {
+  padding: var(--space-2xl) 0;
+}
+
+.blog h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: var(--space-xl);
+}
+
+.blog__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.blog__empty {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .blog__grid {
+    grid-template-columns: 1fr;
+  }
+}
