@@ -1,0 +1,11 @@
+#about{
+    position:relative;
+}
+
+#about p{
+    text-wrap:pretty;
+}
+
+#about blockquote{
+    letter-spacing:.02em;
+}

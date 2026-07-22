@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #F6F3EA;
+  --paper-2: #EEE9DD;
+  --paper-3: #E6E4D8;
+
+  --ink: #212F38;
+  --ink-soft: #4C5B63;
+
+  --indigo: #B8A66B;
+  --indigo-deep: #7D7048;
+
+  --sky: #D9CFA8;
+  --sky-pale: #F2EEDF;
+
+  --amber: #B4863F;
+
+  --hair: rgba(184, 166, 107, 0.18);
+
+  --focus: #7D7048;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+body {
+
+    overflow-x: hidden;
+
+}
+
+button {
+
+    cursor: pointer;
+
+}
+
+::selection {
+
+    background: var(--ink);
+
+    color: var(--paper);
+
+}
