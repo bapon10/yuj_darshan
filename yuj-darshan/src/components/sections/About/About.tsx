@@ -26,7 +26,7 @@ export default function About() {
         <div
           className="
             mx-auto
-            mt-16
+            mt-10
             max-w-3xl
             text-center
             text-lg
