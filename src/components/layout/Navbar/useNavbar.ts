@@ -42,7 +42,7 @@ export default function useNavbar(
 
     const update = () => {
       const trigger =
-        hero.offsetHeight * 0.75;
+        hero.offsetHeight * 0.1;
 
       setScrolled(window.scrollY >= trigger);
     };

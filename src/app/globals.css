@@ -93,3 +93,11 @@ button {
     color: var(--paper);
 
 }
+
+input,
+input:focus,
+input:focus-visible,
+input:-moz-focusring {
+  outline: none !important;
+  box-shadow: none !important;
+}

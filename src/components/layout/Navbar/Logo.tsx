@@ -20,25 +20,55 @@ export default function Logo({
         select-none
       "
     >
-      <span
-        className={`
-          block
-          whitespace-nowrap
-          font-light
-          tracking-[0.35em]
-          transition-all
-          duration-500
-          ease-out
+<div
+  className={`
+    flex
+    items-center
+    justify-center
+    gap-0
+    transition-all
+    duration-500
+    ease-out
+  `}
+>
+  {/* Logo */}
 
-          ${
-            scrolled
-              ? "text-[20px] text-[var(--ink)]"
-              : "text-[30px] text-white"
-          }
-        `}
-      >
-        YUJ DARSHAN
-      </span>
+  <span
+    className={`
+      text-[30px]
+      transition-all
+      duration-500
+
+      ${
+        scrolled
+          ? "text-[22px] text-[var(--ink)]"
+          : "text-[30px] text-white"
+      }
+    `}
+  >
+    LOGO
+  </span>
+
+  {/* Brand Name */}
+
+  <span
+    className={`
+      overflow-hidden
+      whitespace-nowrap
+      transition-all
+      duration-500
+      ease-out
+
+      ${
+        scrolled
+          ? "max-w-[240px] ml-3 opacity-100 text-[18px] tracking-[0.22em] text-[var(--ink)]"
+          : "max-w-0 ml-0 opacity-0"
+      }
+    `}
+  >
+    YUJ DARSHAN
+  </span>
+</div>
     </a>
   );
 }

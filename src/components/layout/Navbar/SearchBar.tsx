@@ -1,7 +1,6 @@
 "use client";
 
-import { Search, X } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface SearchBarProps {
   open: boolean;
@@ -15,61 +14,97 @@ export default function SearchBar({
   onClose,
 }: SearchBarProps) {
   const inputRef = useRef<HTMLInputElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
+  // Focus input when opened
   useEffect(() => {
     if (open) {
       inputRef.current?.focus();
     }
   }, [open]);
 
+  // Close when clicking outside
+  useEffect(() => {
+    if (!open) return;
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.target as Node)
+      ) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutside
+      );
+    };
+  }, [open, onClose]);
+
   return (
     <div
+      ref={wrapperRef}
       className={`
         flex
         items-center
         overflow-hidden
-        rounded-full
-        border
+        border-b
+        rounded-none
         transition-all
         duration-500
         ease-out
 
         ${
           scrolled
-            ? "border-black/20 bg-white"
-            : "border-white/30 bg-white/10 backdrop-blur-md"
+            ? "border-black/30 bg-transparent"
+            : "border-white/60 bg-transparent"
         }
 
         ${
-          open
-            ? "w-[260px] px-3 py-1.5 opacity-100"
-            : "w-0 px-0 py-0 opacity-0 border-transparent"
+        open
+          ? "w-[220px] py-1 opacity-100"
+          : "w-[220px] py-1 opacity-0 pointer-events-none"
         }
       `}
+      style={{
+        boxShadow: "none",
+      }}
     >
-      <Search
-        className={`
-          mr-2
-          h-4
-          w-4
-          shrink-0
-
-          ${
-            scrolled
-              ? "text-[var(--ink)]"
-              : "text-white"
-          }
-        `}
-      />
-
       <input
         ref={inputRef}
         type="text"
-        placeholder="Search..."
+        placeholder="Search"
+        spellCheck={false}
+        autoComplete="off"
+        style={{
+          appearance: "none",
+          WebkitAppearance: "none",
+          MozAppearance: "none",
+          boxShadow: "none",
+        }}
         className={`
-          flex-1
+          w-full
           bg-transparent
+          border-none
           outline-none
+          ring-0
+          shadow-none
+
+          focus:outline-none
+          focus:ring-0
+          focus:border-transparent
+          focus:shadow-none
+
+          focus-visible:outline-none
+          focus-visible:ring-0
+          focus-visible:border-transparent
+          focus-visible:shadow-none
+
           text-sm
 
           ${
@@ -79,25 +114,6 @@ export default function SearchBar({
           }
         `}
       />
-
-      <button
-        onClick={onClose}
-        className="ml-2 shrink-0"
-        aria-label="Close Search"
-      >
-        <X
-          className={`
-            h-4
-            w-4
-
-            ${
-              scrolled
-                ? "text-[var(--ink)]"
-                : "text-white"
-            }
-          `}
-        />
-      </button>
     </div>
   );
 }
