@@ -14,9 +14,9 @@ export default function Home() {
         <About />
         {/* Vision */}
         <section id="vision">
-          <h2>Vision</h2>
+          <h2 className="font-heading">Vision</h2>
 
-          <blockquote>
+          <blockquote className="font-heading">
             We are all seekers at different points in our life. Every question
             and every inquiry is a sign of alignment.
           </blockquote>
@@ -30,12 +30,12 @@ export default function Home() {
 
         {/* Experiences */}
         <section id="experiences">
-          <h2>Experiences We Offer</h2>
+          <h2 className="font-heading">Experiences We Offer</h2>
 
           <article>
             <p>5-Day Workshop</p>
 
-            <h3>Conscious Living through Tantra</h3>
+            <h3 className="font-heading">Conscious Living through Tantra</h3>
 
             <p>
               <em>Vibrant Consciousness through Tantra</em>
@@ -87,7 +87,7 @@ export default function Home() {
           <article>
             <p>5-Day Workshop</p>
 
-            <h3>The Atman Workshop</h3>
+            <h3 className="font-heading">The Atman Workshop</h3>
 
             <p>
               <em>Awareness-Centred Living through Vedanta</em>
@@ -149,22 +149,22 @@ export default function Home() {
 
         {/* Teachers */}
         <section id="teachers">
-          <h2>Meet Our Teachers</h2>
+          <h2 className="font-heading">Meet Our Teachers</h2>
 
           <article>
-            <h3>Teacher Name</h3>
+            <h3 className="font-heading">Teacher Name</h3>
             <p>Role / Tradition</p>
             <p>Teacher biography placeholder.</p>
           </article>
 
           <article>
-            <h3>Teacher Name</h3>
+            <h3 className="font-heading">Teacher Name</h3>
             <p>Role / Tradition</p>
             <p>Teacher biography placeholder.</p>
           </article>
 
           <article>
-            <h3>Teacher Name</h3>
+            <h3 className="font-heading">Teacher Name</h3>
             <p>Role / Tradition</p>
             <p>Teacher biography placeholder.</p>
           </article>
@@ -174,11 +174,11 @@ export default function Home() {
 
         {/* Yoga Nidra */}
         <section id="yoga-nidra">
-          <h2>Guided Yoga Nidra</h2>
+          <h2 className="font-heading">Guided Yoga Nidra</h2>
 
           <p>Coming Soon</p>
 
-          <h3>Recorded Sessions</h3>
+          <h3 className="font-heading">Recorded Sessions</h3>
 
           <p>
             We are preparing a library of guided Yoga Nidra recordings —
@@ -198,30 +198,30 @@ export default function Home() {
 
         {/* Blog */}
         <section id="blog">
-          <h2>Blog</h2>
+          <h2 className="font-heading">Blog</h2>
 
           <article>
             <p>Vedanta</p>
-            <h3>What the Upanishads Mean by "Self"</h3>
+            <h3 className="font-heading">What the Upanishads Mean by "Self"</h3>
             <a href="#">Read more</a>
           </article>
 
           <article>
             <p>Tantra</p>
-            <h3>Kundalini, Beyond the Myth</h3>
+            <h3 className="font-heading">Kundalini, Beyond the Myth</h3>
             <a href="#">Read more</a>
           </article>
 
           <article>
             <p>Practice</p>
-            <h3>Why Yin Yoga Pairs So Well with Stillness</h3>
+            <h3 className="font-heading">Why Yin Yoga Pairs So Well with Stillness</h3>
             <a href="#">Read more</a>
           </article>
         </section>
 
         {/* Footer */}
         <footer id="footer">
-          <h2>Yuj Darshan</h2>
+          <h2 className="font-brand">Yuj Darshan</h2>
 
           <p>A journey to Self.</p>
 
@@ -237,7 +237,7 @@ export default function Home() {
 
           <p>Contact</p>
 
-          <p>© Yuj Darshan</p>
+          <p>© <span className="font-brand">Yuj Darshan</span></p>
         </footer>
 
       </main>

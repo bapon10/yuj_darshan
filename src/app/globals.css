@@ -18,7 +18,27 @@
 
   --hair: rgba(184, 166, 107, 0.18);
 
+  --font-brand: var(--font-italiana);
+  --font-heading: var(--font-gloock);
+  --font-body: var(--font-karla);
+
   --focus: #7D7048;
+}
+
+.font-brand {
+  font-family: var(--font-italiana), serif;
+}
+
+.font-heading {
+  font-family: var(--font-gloock), serif;
+}
+
+.font-body {
+  font-family: var(--font-karla), sans-serif;
+}
+
+body {
+  font-family: var(--font-karla), sans-serif;
 }
 
 *,
@@ -41,7 +61,6 @@ body {
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 

@@ -58,6 +58,7 @@ export default function Logo({
       transition-all
       duration-500
       ease-out
+      font-brand
 
       ${
         scrolled

@@ -15,8 +15,7 @@ export default function About() {
       <div className="mx-auto max-w-4xl">
 
         <h2
-          className="text-center text-4xl text-ink"
-          style={{ fontFamily: "var(--font-italiana)" }}
+          className="font-heading"
         >
           About Us
         </h2>
@@ -33,18 +32,17 @@ export default function About() {
             leading-9
             text-ink/85
           "
-          style={{ fontFamily: "var(--font-karla)" }}
         >
-          <p>
+          <p className="font-body">
             We are a family of yoga practitioners and teachers who have
             practised and taught yoga across generations — not as a fitness
             trend, but as an embodiment of Tantric and Vedantic thoughts.
           </p>
 
-          <p className="mt-8">
-            At Yuj Darshan, we offer a safe space to study that tradition
+          <p className="mt-8 font-body">
+            At <span className="font-brand">Yuj Darshan</span>, we offer a safe space to study that tradition
             seriously: through body, philosophy, honest self-inquiry and
-            awareness. Rooted in the etymology of Yuj Darshan, we want to offer
+            awareness. Rooted in the etymology of <span className="font-brand">Yuj Darshan</span>, we want to offer
             ways of establishing an inward harmony.
           </p>
         </div>

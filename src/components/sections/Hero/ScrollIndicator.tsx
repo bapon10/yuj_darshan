@@ -15,10 +15,7 @@ export default function ScrollIndicator() {
         text-white
       "
     >
-      <p
-        className="text-xs uppercase tracking-[0.35em] opacity-90"
-        style={{ fontFamily: "var(--font-karla)" }}
-      >
+      <p className="text-xs uppercase tracking-[0.35em] opacity-90">
         Begin the Journey
       </p>
 

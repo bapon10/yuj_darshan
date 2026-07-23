@@ -11,10 +11,7 @@ export default function Philosophy() {
         "
       >
         <div>
-          <h3
-            className="text-3xl text-terracotta"
-            style={{ fontFamily: "var(--font-gloock)" }}
-          >
+          <h3 className="text-3xl text-terracotta font-heading">
             Yuj
           </h3>
 
@@ -26,17 +23,13 @@ export default function Philosophy() {
               tracking-[0.18em]
               text-sage
             "
-            style={{ fontFamily: "var(--font-karla)" }}
           >
             To yoke · To unite
           </p>
         </div>
 
         <div>
-          <h3
-            className="text-3xl text-terracotta"
-            style={{ fontFamily: "var(--font-gloock)" }}
-          >
+          <h3 className="text-3xl text-terracotta font-heading">
             Darshan
           </h3>
 
@@ -48,7 +41,6 @@ export default function Philosophy() {
               tracking-[0.18em]
               text-sage
             "
-            style={{ fontFamily: "var(--font-karla)" }}
           >
             To see · A vision · A way of seeing
           </p>
@@ -68,8 +60,8 @@ export default function Philosophy() {
           text-3xl
           leading-relaxed
           text-ink
+          font-heading
         "
-        style={{ fontFamily: "var(--font-italiana)" }}
       >
         A vision of union:
         <br />

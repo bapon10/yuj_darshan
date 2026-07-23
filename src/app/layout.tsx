@@ -4,7 +4,7 @@ import "./globals.css";
 
 import { NavbarProvider } from "@/components/layout/Navbar/NavbarContext";
 
-import { Italiana, Italianno, Gloock} from "next/font/google";
+import { Italiana, Karla, Gloock} from "next/font/google";
 
 const italiana = Italiana({
   subsets: ["latin"],
@@ -12,10 +12,10 @@ const italiana = Italiana({
   variable: "--font-italiana",
 });
 
-const italianno = Italianno({
+const karla = Karla({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-italianno",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-karla",
 });
 
 const gloock = Gloock({
@@ -49,7 +49,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className={`${italiana.variable} ${italianno.variable}`}>
+      <body
+  className={`
+    ${italiana.variable}
+    ${gloock.variable}
+    ${karla.variable}
+  `}
+>
     <NavbarProvider>
         {children}
     </NavbarProvider>

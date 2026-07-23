@@ -1,5 +1,5 @@
 import HeroOverlay from "./HeroOverlay";
-// import HeroSlideshow from "./HeroSlideshow";
+import HeroSlideshow from "./HeroSlideshow";
 import "./Hero.css";
 import ScrollIndicator from "./ScrollIndicator";
 
@@ -15,7 +15,7 @@ export default function Hero() {
         bg-black
       "
     >
-      {/* <HeroSlideshow /> */}
+      <HeroSlideshow />
 
       <HeroOverlay />
       <ScrollIndicator />
