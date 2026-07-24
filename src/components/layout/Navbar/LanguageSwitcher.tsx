@@ -35,7 +35,7 @@ export default function LanguageSwitcher({
                   ? "text-[var(--ink)]"
                   : "text-[var(--paper)]"
                 : scrolled
-                  ? "text-black/45"
+                  ? "text-[var(--ink)]/45"
                   : "text-white/45"
             }
           `}
@@ -88,7 +88,7 @@ export default function LanguageSwitcher({
                   ? "text-[var(--ink)]"
                   : "text-[var(--paper)]"
                 : scrolled
-                  ? "text-black/45"
+                  ? "text-[var(--ink)]/45"
                   : "text-white/45"
             }
           `}

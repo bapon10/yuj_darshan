@@ -61,7 +61,7 @@ export default function SearchBar({
 
         ${
           scrolled
-            ? "border-black/30 bg-transparent"
+            ? "border-[var(--hair)] bg-transparent"
             : "border-white/60 bg-transparent"
         }
 
@@ -109,7 +109,7 @@ export default function SearchBar({
 
           ${
             scrolled
-              ? "text-[var(--ink)] placeholder:text-black/40"
+              ? "text-[var(--ink)] placeholder:text-[var(--ink)]/40"
               : "text-white placeholder:text-white/60"
           }
         `}

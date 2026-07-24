@@ -19,7 +19,7 @@ export default function SearchButton({
         className={`
           ${
             scrolled
-              ? "text-black w-[18px] h-[18px]"
+              ? "text-[var(--ink)] w-[18px] h-[18px]"
               : "text-white w-5 h-5"
           }
         `}
